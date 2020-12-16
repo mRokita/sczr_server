@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  api:
+    build:
+      context: sczr_api
+    ports:
+      - 8082:80
+  redis:
+    image: redis:latest
